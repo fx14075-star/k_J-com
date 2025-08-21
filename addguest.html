@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.2 for Windows">
+<title>掲示板へのご記入</title>
+<BODY bgcolor="#660000" background="bla3b.gif" text="#ffff00">
+<h1 align="center">慶のゲストブックへのご記入</h1>
+
+<!---
+
+慶の掲示板へようこそ! Web サイトにゲストブックを追加する方法については、WebSpace オンライン ヘルプを参照してください。WebSpace ディレクトリには、'guestbook.html' および 'addguest.html' というファイルが必要です。ファイル名は大文字小文字を区別します。正しいファイル名を使用しないと、エラーとなりますのでご注意ください。このファイルは編集可能ですが、機能しなくなる可能性があるので、フォーム セクションについては変更しないことをお勧めします。最終更新日: 2000年9月5日
+
+--->
+
+
+<p>掲示板にご記入いただくには、下のフィールドに必要事項を入力してください。<br><font color="red">[お名前:] と[コメント:] のセクションは、必ずご記入ください。</font></p>
+
+<hr>
+
+
+
+
+
+
+<!--start of form-->
+<form action="/cgi-bin/guestbook.pl" method="POST">
+    <div align="left"><table border="0" width="600">
+        <tr>
+            <td>お名前:</td>
+            <td colspan="2"><input type="text" size="30" name="realname"></td>
+        </tr>
+        <tr>
+            <td>メール: </td>
+            <td colspan="2"><input type="text" size="40" name="username"></td>
+        </tr>
+        <tr>
+            <td>URL:</td>
+            <td colspan="2"><input type="text" size="50" name="url"></td>
+        </tr>
+	<tr>
+            <td>国名: </td>
+	    <td colspan="2"><input type="text" size="15" name="country" value="日本"></td>        </tr>
+	<tr>
+            <td>都道府県: </td>
+	    <td colspan="2"><input type="text" size="15" name="state"></td>
+	</tr>
+        <tr>
+            <td>市町村区: </td>
+	    <td colspan="2"><input type="text" size="15" name="city"></td>
+	</tr>
+    </table>
+    </div><p>コメント:<br>
+    <textarea name="comments" rows="4" cols="60" wrap=physical></textarea></p>
+    <p><input type="submit" value="掲示板エントリの送付"> <input type="reset" value="フォームのクリア"> </p>
+</form>
+<!--end of form-->
+
+<hr>
+
+<p><a href="guestbook.html">掲示板エントリに戻る</a><br>
+</p>
+
+<p align="center"><a href="http://www.jp.home.com/">
+<img src="/images/homenetwork.gif" alt="[@Home WebSpace]" border="0" width="88" height="32"></a> </p>
+</BODY>
+</html>
